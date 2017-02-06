@@ -2,7 +2,6 @@ configuration:
   projectName: bitmiweb_boot
 
 server:
-  port: 8079
   display-name: bitmiweb_boot
   session:
     timeout: 0
@@ -48,6 +47,7 @@ spring:
   profiles: dev
 
 server:
+  port: 8079
 #====================================================================================
 # https: ssl 
 #====================================================================================
@@ -88,6 +88,7 @@ spring:
   profiles: prod
 
 server:
+  port: 8079
 #====================================================================================
 # https: ssl 
 #====================================================================================
@@ -128,6 +129,7 @@ spring:
   profiles: test
 
 server:
+  port: 8079
 #====================================================================================
 # https: ssl 
 #====================================================================================
@@ -168,6 +170,7 @@ spring:
   profiles: linux
 
 server:
+  port: 8079
 #====================================================================================
 # https: ssl 
 #====================================================================================
@@ -208,11 +211,12 @@ spring:
   profiles: ktcloud
 
 server:
+  port: 0
 #====================================================================================
 # https: ssl 
 #====================================================================================
   ssl:
-    port: 8443
+    port: 0
     key-store: classpath:bitcomputer.pfx
     key-store-password: bitcom1234
     key-password: bitcom1234
@@ -224,7 +228,7 @@ server:
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
-    port: 8080
+    port: 0
 
 configuration:  
   projectName: bitmiweb_boot-ktcloud
