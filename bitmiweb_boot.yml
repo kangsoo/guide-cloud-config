@@ -29,7 +29,7 @@ spring:
       validation-query: select 'NOT_SQL_LOG' from dual
   redis:
     host: 211.253.31.109
-    password: secret
+    password: bitcom1983!@#
     port: 6379
   session:
     store-type: redis
