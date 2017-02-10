@@ -246,3 +246,57 @@ nhic:
   
 cypto:
   properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
+
+---
+spring:
+  profiles: hando
+  datasource:
+    url: 'jdbc:log4jdbc:oracle:thin:@211.44.250.199:1521:MEPS'
+    username: mepsmi
+    password: mepsmi!@#123
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    tomcat:
+      url: 'jdbc:log4jdbc:oracle:thin:@211.44.250.199:1521:MEPS'
+      username: mepsmi
+      password: mepsmi!@#123
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      test-while-idle: true
+      test-on-borrow: true
+      validation-query: select 'NOT_SQL_LOG' from dual
+
+server:
+  port: 0
+#====================================================================================
+# https: ssl 
+#====================================================================================
+  ssl:
+    port: 0
+    key-store: classpath:bitcomputer.pfx
+    key-store-password: bitcom1234
+    key-password: bitcom1234
+    keyStoreType: PKCS12
+    #keyAlias: bitmiweb_boot
+    tempFileName: bitcomputer
+    tempFileExt: .pfx
+    fileName: bitcomputer.pfx
+    #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
+    #protocol: TLS      
+  http:
+    port: 0
+
+configuration:  
+  projectName: bitmiweb_boot-ktcloud
+  
+sample:
+  foo: 'this is ktcloud-foot 입니다.'
+  bar: 'this is ktcloud-bar 입니다.'
+
+message:
+  greeting: bitmiweb_boot-ktcloud == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
+  locale: ko_KR
+
+nhic:
+  domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
+  
+cypto:
+  properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
