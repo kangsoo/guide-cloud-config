@@ -265,12 +265,12 @@ spring:
       validation-query: select 'NOT_SQL_LOG' from dual
 
 server:
-  port: 0
+  port: 8079
 #====================================================================================
 # https: ssl 
 #====================================================================================
   ssl:
-    port: 0
+    port: 8443
     key-store: classpath:bitcomputer.pfx
     key-store-password: bitcom1234
     key-password: bitcom1234
@@ -282,7 +282,7 @@ server:
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
-    port: 0
+    port: 8080
 
 configuration:  
   projectName: bitmiweb_boot-ktcloud
