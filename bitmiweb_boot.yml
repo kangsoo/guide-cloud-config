@@ -33,6 +33,13 @@ spring:
     port: 6379
   session:
     store-type: redis
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 sample:
   foo: 'this is foo 입니다.'
@@ -106,6 +113,13 @@ server:
     #protocol: TLS      
   http:
     port: 8080
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-prod
@@ -147,6 +161,13 @@ server:
     #protocol: TLS      
   http:
     port: 8080
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-test
@@ -188,6 +209,13 @@ server:
     #protocol: TLS      
   http:
     port: 8080
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: /bitmiwebserver/target
+    import-path: /bitmiwebserver/target
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-linux
@@ -229,6 +257,13 @@ server:
     #protocol: TLS      
   http:
     port: 0
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: /bitmiwebserver/target
+    import-path: /bitmiwebserver/target
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-ktcloud
@@ -283,6 +318,13 @@ server:
     #protocol: TLS      
   http:
     port: 8080
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: /
+    import-path: /
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-ktcloud
