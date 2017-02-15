@@ -6,7 +6,7 @@ server:
   session:
     timeout: 1800
     cookie.max-age: 1800
-  context-path: /bitmiweb_searchserver
+  context-path: /bitmiweb_search
 # xeni context param, GridExportImportServlet
   context-parameters:
     export-path: file://C:/bitmiweb_boot/workspace/excel
