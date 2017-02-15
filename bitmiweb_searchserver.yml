@@ -7,6 +7,13 @@ server:
     timeout: 1800
     cookie.max-age: 1800
   context-path: /bitmiweb_searchserver
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 # MULTIPART (MultipartProperties)
 spring:
@@ -65,6 +72,13 @@ server:
     #protocol: TLS      
   http:
     port: 8070
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-dev
@@ -106,6 +120,13 @@ server:
     #protocol: TLS      
   http:
     port: 8070
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-prod
@@ -147,6 +168,13 @@ server:
     #protocol: TLS      
   http:
     port: 8070
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-test
@@ -188,6 +216,13 @@ server:
     #protocol: TLS      
   http:
     port: 8070
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: /
+    import-path: /
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-linux
@@ -229,6 +264,13 @@ server:
     #protocol: TLS      
   http:
     port: 0
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: /
+    import-path: /
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-ktcloud
@@ -283,6 +325,13 @@ server:
     #protocol: TLS      
   http:
     port: 8070
+# xeni context param, GridExportImportServlet
+  context-parameters:
+    export-path: /
+    import-path: /
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
 
 configuration:  
   projectName: bitmiweb_boot-ktcloud
