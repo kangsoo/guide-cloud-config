@@ -84,9 +84,6 @@ message:
   greeting: bitmiweb_boot-dev == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
   locale: ko_KR
 
-nhic:
-  domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
-    
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
     
@@ -132,9 +129,6 @@ message:
   greeting: bitmiweb_boot-prod == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
   locale: ko_KR
 
-nhic:
-  domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
-  
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
 
@@ -180,9 +174,6 @@ message:
   greeting: bitmiweb_boot-test == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
   locale: ko_KR
 
-nhic:
-  domain: http://localhost
-  
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
 
@@ -228,9 +219,6 @@ message:
   greeting: bitmiweb_boot-linux == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
   locale: ko_KR
 
-nhic:
-  domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
-  
 cypto:
   properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
 
@@ -276,9 +264,6 @@ message:
   greeting: bitmiweb_boot-ktcloud == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
   locale: ko_KR
 
-nhic:
-  domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
-  
 cypto:
   properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
 
@@ -337,8 +322,5 @@ message:
   greeting: bitmiweb_boot-ktcloud == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
   locale: ko_KR
 
-nhic:
-  domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
-  
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
