@@ -1,14 +1,26 @@
+#--------------------------------
+# project-name
+#--------------------------------
 configuration:  
   projectName: bitmiweb_boot
 
+#--------------------------------
+# server
+#--------------------------------
 server:
   display-name: bitmiweb_boot
   session:
     timeout: 1800
     cookie.max-age: 1800
   context-path: /bitmiweb_boot
+  compression:
+    enabled: true
+    min-response-size: 2048
+    mime-types: text/html,application/javascript,image/png,text/xml,application/font-woff
 
-# MULTIPART (MultipartProperties)
+#--------------------------------
+# spring
+#--------------------------------
 spring:
   http:
     multipart:
@@ -33,14 +45,24 @@ spring:
     port: 6379
   session:
     store-type: redis
-# xeni context param, GridExportImportServlet
   context-parameters:
     export-path: file://C:/bitmiweb_boot/workspace/excel
     import-path: file://C:/bitmiweb_boot/workspace/excel
     monitor-enabled: true
     monitor-cycle-time: 30
     file-storage-time: 10
+  cache:
+    cache-names: redis
+  resources:
+    chain:
+      cache: true
+      enabled: true
+    cache-period: 3600
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/public/
 
+#--------------------------------
+# etc
+#--------------------------------
 sample:
   foo: 'this is foo 입니다.'
   bar: 'this is bar 입니다.'
@@ -48,16 +70,23 @@ sample:
 message:
   greeting: bitmiweb_boot == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!! !
   locale: ko_KR
-  
+
+static:
+  resource:
+    location: file:///C:/bitmiwebdata/
+
+#================================
+# spring.profiles.active = dev
+#================================
 ---
 spring:
   profiles: dev
 
+#--------------------------------
+# server
+#--------------------------------
 server:
   port: 8079
-#====================================================================================
-# https: ssl 
-#====================================================================================
   ssl:
     port: 8443
     key-store: classpath:bitcomputer.pfx
@@ -73,6 +102,9 @@ server:
   http:
     port: 8080
 
+#--------------------------------
+# etc
+#--------------------------------
 configuration:  
   projectName: bitmiweb_boot-dev
   
@@ -86,16 +118,20 @@ message:
 
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
-    
+
+static:
+  resource:
+    location: file:///C:/bitmiwebdata/
+
+#================================
+# spring.profiles.active = prod
+#================================
 ---
 spring:
   profiles: prod
 
 server:
   port: 8079
-#====================================================================================
-# https: ssl 
-#====================================================================================
   ssl:
     port: 8443
     key-store: classpath:bitcomputer.pfx
@@ -110,7 +146,6 @@ server:
     #protocol: TLS      
   http:
     port: 8080
-# xeni context param, GridExportImportServlet
   context-parameters:
     export-path: file://C:/bitmiweb_boot/workspace/excel
     import-path: file://C:/bitmiweb_boot/workspace/excel
@@ -132,15 +167,19 @@ message:
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
 
+static:
+  resource:
+    location: file:/bitmiwebdata/
+
+#================================
+# spring.profiles.active = test
+#================================
 ---
 spring:
   profiles: test
 
 server:
   port: 8079
-#====================================================================================
-# https: ssl 
-#====================================================================================
   ssl:
     port: 8443
     key-store: classpath:bitcomputer.pfx
@@ -155,7 +194,6 @@ server:
     #protocol: TLS      
   http:
     port: 8080
-# xeni context param, GridExportImportServlet
   context-parameters:
     export-path: file://C:/bitmiweb_boot/workspace/excel
     import-path: file://C:/bitmiweb_boot/workspace/excel
@@ -177,15 +215,19 @@ message:
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
 
+static:
+  resource:
+    location: file:///C:/bitmiwebdata/
+
+#================================
+# spring.profiles.active = linux
+#================================
 ---
 spring:
   profiles: linux
 
 server:
   port: 8079
-#====================================================================================
-# https: ssl 
-#====================================================================================
   ssl:
     port: 8443
     key-store: classpath:bitcomputer.pfx
@@ -200,7 +242,6 @@ server:
     #protocol: TLS      
   http:
     port: 8080
-# xeni context param, GridExportImportServlet
   context-parameters:
     export-path: /bitmiwebserver/target
     import-path: /bitmiwebserver/target
@@ -222,15 +263,19 @@ message:
 cypto:
   properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
 
+static:
+  resource:
+    location: file:/bitmiwebdata/
+
+#================================
+# spring.profiles.active = ktcloud
+#================================
 ---
 spring:
   profiles: ktcloud
 
 server:
   port: 0
-#====================================================================================
-# https: ssl 
-#====================================================================================
   ssl:
     port: 0
     key-store: classpath:bitcomputer.pfx
@@ -245,7 +290,6 @@ server:
     #protocol: TLS      
   http:
     port: 0
-# xeni context param, GridExportImportServlet
   context-parameters:
     export-path: /bitmiwebserver/target
     import-path: /bitmiwebserver/target
@@ -267,6 +311,13 @@ message:
 cypto:
   properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
 
+static:
+  resource:
+    location: file:/bitmiwebdata/
+
+#================================
+# spring.profiles.active = hando
+#================================
 ---
 spring:
   profiles: hando
@@ -286,9 +337,6 @@ spring:
 
 server:
   port: 8079
-#====================================================================================
-# https: ssl 
-#====================================================================================
   ssl:
     port: 8443
     key-store: classpath:bitcomputer.pfx
@@ -303,7 +351,6 @@ server:
     #protocol: TLS      
   http:
     port: 8080
-# xeni context param, GridExportImportServlet
   context-parameters:
     export-path: /
     import-path: /
@@ -324,3 +371,7 @@ message:
 
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
+  
+static:
+  resource:
+    location: file:///C:/bitmiwebdata/
