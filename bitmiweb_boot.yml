@@ -86,8 +86,8 @@ static:
 
 # mybatis
 mybatis
-  config-location: classpath:mybatis-config.xml
-
+  config-location: 'classpath:mybatis-config.xml'
+  
 #================================
 # spring.profiles.active = dev
 #================================
