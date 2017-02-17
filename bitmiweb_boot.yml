@@ -85,7 +85,7 @@ static:
     location: file:///C:/bitmiwebdata/
 
 # mybatis
-mybatis
+mybatis:
   config-location: 'classpath:mybatis-config.xml'
   
 #================================
