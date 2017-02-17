@@ -82,7 +82,7 @@ message:
 # statics resource location
 static:
   resource:
-    location: file:///C:/bitmiwebdata/
+    location: file:///C:/clemrbdata/
 
 # mybatis
 mybatis:
@@ -134,7 +134,7 @@ cypto:
 
 static:
   resource:
-    location: file:///C:/bitmiwebdata/
+    location: file:///C:/clemrdata/
 
 #================================
 # spring.profiles.active = prod
@@ -182,7 +182,7 @@ cypto:
 
 static:
   resource:
-    location: file:/bitmiwebdata/
+    location: file:/clemrdata/
 
 #================================
 # spring.profiles.active = test
@@ -230,7 +230,7 @@ cypto:
 
 static:
   resource:
-    location: file:///C:/bitmiwebdata/
+    location: file:///C:/clemrdata/
 
 #================================
 # spring.profiles.active = linux
@@ -278,7 +278,7 @@ cypto:
 
 static:
   resource:
-    location: file:/bitmiwebdata/
+    location: file:/clemrdata/
 
 #================================
 # spring.profiles.active = ktcloud
@@ -326,7 +326,7 @@ cypto:
 
 static:
   resource:
-    location: file:/bitmiwebdata/
+    location: file:/clemrdata/
 
 #================================
 # spring.profiles.active = hando
@@ -387,4 +387,4 @@ cypto:
   
 static:
   resource:
-    location: file:///C:/bitmiwebdata/
+    location: file:///C:/clemrdata/
