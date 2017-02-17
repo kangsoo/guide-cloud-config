@@ -53,12 +53,12 @@ spring:
     file-storage-time: 10
   cache:
     cache-names: redis
-  resources:
-    chain:
-      cache: true
-      enabled: true
-    cache-period: 3600
-    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/public/
+#  resources:
+#    chain:
+#      cache: true
+#      enabled: true
+#    cache-period: 3600
+#    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/public/
 
 #--------------------------------
 # etc
