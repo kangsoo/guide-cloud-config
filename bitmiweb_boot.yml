@@ -43,6 +43,8 @@ spring:
     host: 211.253.31.109
     password: bitcom1983!@#
     port: 6379
+  cache:
+    cache-names: redis
   session:
     store-type: redis
   context-parameters:
@@ -51,14 +53,18 @@ spring:
     monitor-enabled: true
     monitor-cycle-time: 30
     file-storage-time: 10
-  cache:
-    cache-names: redis
+# html Page - redirect
+  mvc:
+    view:
+      prefix: /ipaint/
+      suffix: .html
+
 #  resources:
 #    chain:
 #      cache: true
 #      enabled: true
 #    cache-period: 3600
-#    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/public/
+#    static-locations: classpath:/META-INF/resources/,classpath:/public/,classpath:/resources/
 
 #--------------------------------
 # etc
