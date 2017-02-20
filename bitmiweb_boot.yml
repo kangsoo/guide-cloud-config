@@ -54,11 +54,12 @@ spring:
     monitor-enabled: true
     monitor-cycle-time: 30
     file-storage-time: 10
-# html Page - redirect
   mvc:
     view:
       prefix: /ipaint/
       suffix: .html
+  messages:
+    encoding: UTF-8
 
 #  resources:
 #    chain:
