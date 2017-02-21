@@ -41,7 +41,14 @@ sample:
 message:
   greeting: bitmiweb_boot == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
   locale: ko_KR
-  
+
+cypto:
+  properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
+
+static:
+  resource:
+    location: file:///C:/clemrdata/
+
 ---
 spring:
   profiles: dev
@@ -82,7 +89,11 @@ nhic:
     
 cypto:
   properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
-    
+
+static:
+  resource:
+    location: file:///C:/clemrdata/
+
 ---
 spring:
   profiles: prod
