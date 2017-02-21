@@ -87,13 +87,6 @@ message:
 nhic:
   domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
     
-cypto:
-  properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
-
-static:
-  resource:
-    location: file:///C:/clemrdata/
-
 ---
 spring:
   profiles: prod
@@ -133,8 +126,12 @@ nhic:
   domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
   
 cypto:
-  properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
+  properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
 
+static:
+  resource:
+    location: file:/clemrdata/
+    
 ---
 spring:
   profiles: test
@@ -172,9 +169,6 @@ message:
 
 nhic:
   domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
-  
-cypto:
-  properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
 
 ---
 spring:
@@ -217,6 +211,10 @@ nhic:
 cypto:
   properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
 
+static:
+  resource:
+    location: file:/clemrdata/
+    
 ---
 spring:
   profiles: ktcloud
@@ -258,6 +256,10 @@ nhic:
 cypto:
   properties: '/root/bitmiwebserver/xecuredb/conf/xdsp_pool.properties'
 
+static:
+  resource:
+    location: file:/clemrdata/
+    
 ---
 spring:
   profiles: hando
@@ -309,5 +311,3 @@ message:
 nhic:
   domain: http://ws.nhic.or.kr:1443/services/nhic?WSDL
   
-cypto:
-  properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
