@@ -254,7 +254,20 @@ static:
 ---
 spring:
   profiles: linux
-
+  datasource:
+    url: 'jdbc:log4jdbc:oracle:thin:@10.28.8.200:1521:BITMIHIS'
+    username: bitmi0003
+    password: bitmiora
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    tomcat:
+      url: 'jdbc:log4jdbc:oracle:thin:@10.28.8.200:1521:BITMIHIS'
+      username: bitmi0003
+      password: bitmiora
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      test-while-idle: true
+      test-on-borrow: true
+      validation-query: select 'NOT_SQL_LOG' from dual
+      
 server:
   port: 8079
   ssl:
@@ -272,8 +285,8 @@ server:
   http:
     port: 8080
   context-parameters:
-    export-path: /bitmiwebserver/target
-    import-path: /bitmiwebserver/target
+    export-path: /clemrdata/excel
+    import-path: /clemrdata/excel
     monitor-enabled: true
     monitor-cycle-time: 30
     file-storage-time: 10
