@@ -434,3 +434,88 @@ cypto:
 static:
   resource:
     location: file:///C:/clemrdata/
+
+#================================
+# spring.profiles.active = kimes
+#================================
+---
+spring:
+  profiles: kimes
+  http:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+  datasource:
+    url: 'jdbc:log4jdbc:oracle:thin:@122.199.232.175:1521:BITMIHIS'
+    username: bitmi0002
+    password: bitmiora
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    tomcat:
+      url: 'jdbc:log4jdbc:oracle:thin:@122.199.232.175:1521:BITMIHIS'
+      username: bitmi0002
+      password: bitmiora
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      test-while-idle: true
+      test-on-borrow: true
+      validation-query: select 'NOT_SQL_LOG' from dual
+  redis:
+    host: 211.253.31.109
+    password: bitcom1983!@#
+    port: 6379
+  cache:
+    cache-names: redis
+  session:
+    store-type: redis
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
+  mvc:
+    view:
+      prefix: /ipaint/
+      suffix: .html
+  messages:
+    encoding: UTF-8
+
+server:
+  port: 8079
+  ssl:
+    port: 8443
+    key-store: classpath:www.clemr.kr.p12
+    key-store-password: bitcom1234
+    key-password: bitcom1234
+    keyStoreType: PKCS12
+    #keyAlias: bitmiweb_boot
+    tempFileName: www.clemr.kr
+    tempFileExt: .p12
+    fileName: www.clemr.kr.p12
+    #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
+    #protocol: TLS      
+  http:
+    port: 8080
+  context-parameters:
+    export-path: file://C:/bitmiweb_boot/workspace/excel
+    import-path: file://C:/bitmiweb_boot/workspace/excel
+    monitor-enabled: true
+    monitor-cycle-time: 30
+    file-storage-time: 10
+
+configuration:  
+  projectName: bitmiweb_boot-test
+  
+sample:
+  foo: 'this is test-foot 입니다.'
+  bar: 'this is test-bar 입니다.'
+
+message:
+  greeting: bitmiweb_boot-test == 진짜 되네~ ㅋㅋㅋ 와우 진짜인가 봐요~ 안녕하세요? 김강수입니다. 만나서 반갑습니다.!!!!
+  locale: ko_KR
+
+cypto:
+  properties: 'C:\bitmiweb_boot\bin\xecuredb\conf\xdsp_pool.properties'
+
+static:
+  resource:
+    location: file:///C:/clemrdata/
