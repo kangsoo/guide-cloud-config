@@ -1,8 +1,8 @@
 configuration:  
-  projectName: bitmiweb_searchserver
+  projectName: bitmiweb_search
 
 server:
-  display-name: bitmiweb_searchserver
+  display-name: bitmiweb_search
   session:
     timeout: 1800
     cookie.max-age: 1800
