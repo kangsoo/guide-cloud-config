@@ -60,14 +60,14 @@ server:
 #====================================================================================
   ssl:
     port: 8442
-    key-store: classpath:bitcomputer.pfx
+    key-store: classpath:www.clemr.kr.p12
     key-store-password: bitcom1234
     key-password: bitcom1234
     keyStoreType: PKCS12
     #keyAlias: bitmiweb_boot
-    tempFileName: bitcomputer
-    tempFileExt: .pfx
-    fileName: bitcomputer.pfx
+    tempFileName: www.clemr.kr
+    tempFileExt: .p12
+    fileName: www.clemr.kr.p12
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
@@ -108,14 +108,14 @@ server:
 #====================================================================================
   ssl:
     port: 8442
-    key-store: classpath:bitcomputer.pfx
+    key-store: classpath:www.clemr.kr.p12
     key-store-password: bitcom1234
     key-password: bitcom1234
     keyStoreType: PKCS12
     #keyAlias: bitmiweb_boot
-    tempFileName: bitcomputer
-    tempFileExt: .pfx
-    fileName: bitcomputer.pfx
+    tempFileName: www.clemr.kr
+    tempFileExt: .p12
+    fileName: www.clemr.kr.p12
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
@@ -156,14 +156,14 @@ server:
 #====================================================================================
   ssl:
     port: 0
-    key-store: classpath:bitcomputer.pfx
+    key-store: classpath:www.clemr.kr.p12
     key-store-password: bitcom1234
     key-password: bitcom1234
     keyStoreType: PKCS12
     #keyAlias: bitmiweb_boot
-    tempFileName: bitcomputer
-    tempFileExt: .pfx
-    fileName: bitcomputer.pfx
+    tempFileName: www.clemr.kr
+    tempFileExt: .p12
+    fileName: www.clemr.kr.p12
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
@@ -204,14 +204,14 @@ server:
 #====================================================================================
   ssl:
     port: 8442
-    key-store: classpath:bitcomputer.pfx
+    key-store: classpath:www.clemr.kr.p12
     key-store-password: bitcom1234
     key-password: bitcom1234
     keyStoreType: PKCS12
     #keyAlias: bitmiweb_boot
-    tempFileName: bitcomputer
-    tempFileExt: .pfx
-    fileName: bitcomputer.pfx
+    tempFileName: www.clemr.kr
+    tempFileExt: .p12
+    fileName: www.clemr.kr.p12
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
@@ -252,14 +252,14 @@ server:
 #====================================================================================
   ssl:
     port: 0
-    key-store: classpath:bitcomputer.pfx
+    key-store: classpath:www.clemr.kr.p12
     key-store-password: bitcom1234
     key-password: bitcom1234
     keyStoreType: PKCS12
     #keyAlias: bitmiweb_boot
-    tempFileName: bitcomputer
-    tempFileExt: .pfx
-    fileName: bitcomputer.pfx
+    tempFileName: www.clemr.kr
+    tempFileExt: .p12
+    fileName: www.clemr.kr.p12
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
@@ -313,14 +313,14 @@ server:
 #====================================================================================
   ssl:
     port: 8442
-    key-store: classpath:bitcomputer.pfx
+    key-store: classpath:www.clemr.kr.p12
     key-store-password: bitcom1234
     key-password: bitcom1234
     keyStoreType: PKCS12
     #keyAlias: bitmiweb_boot
-    tempFileName: bitcomputer
-    tempFileExt: .pfx
-    fileName: bitcomputer.pfx
+    tempFileName: www.clemr.kr
+    tempFileExt: .p12
+    fileName: www.clemr.kr.p12
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
