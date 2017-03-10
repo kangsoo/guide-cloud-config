@@ -1,12 +1,12 @@
 configuration:  
-  projectName: bitmiweb_boot_batch
+  projectName: clemr_batch
 
 server:
-  display-name: bitmiweb_boot_batch
+  display-name: clemr_batch
   session:
     timeout: 1800
     cookie.max-age: 1800
-  context-path: /bitmiweb_boot_batch
+  context-path: /clemr_batch
 
 # MULTIPART (MultipartProperties)
 spring:
