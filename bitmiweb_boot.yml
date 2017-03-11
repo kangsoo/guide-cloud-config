@@ -246,7 +246,7 @@ cypto:
 
 static:
   resource:
-    location: file://C:/clemrdata/
+    location: C:/clemrdata/
 
 #================================
 # spring.profiles.active = linux
