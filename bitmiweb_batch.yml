@@ -10,6 +10,8 @@ server:
 
 # MULTIPART (MultipartProperties)
 spring:
+  application:
+    name: clemr-batch-service
   http:
     multipart:
       max-file-size: 10MB
