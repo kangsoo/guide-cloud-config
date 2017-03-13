@@ -7,7 +7,15 @@ configuration:
 management:
   context-path: /clemr_boot
   port: 8761
-  
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka.clemr.kr:8761/eureka/
+  instance:
+    hostname: ${APPLICATION_DOMAIN}
+    nonSecurePort: 80
+    
 #--------------------------------
 # server
 #--------------------------------
