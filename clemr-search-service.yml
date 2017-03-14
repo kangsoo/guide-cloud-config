@@ -6,7 +6,7 @@ eureka:
     serviceUrl:
       defaultZone: ${vcap.services.eureka-service.credentials.uri:http://eureka.clemr.kr:8761}/eureka/
   instance:
-    hostname: ${SPRING_APPLICATION_NAME}
+    hostname: clemr-search-service
     nonSecurePort: 8070
 
 server:
