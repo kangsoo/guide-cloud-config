@@ -17,7 +17,7 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka.clemr.kr:8761/eureka/
   instance:
-    hostname: ${APPLICATION_DOMAIN}
+    hostname: clemr-service
     nonSecurePort: 80
 
 #--------------------------------
