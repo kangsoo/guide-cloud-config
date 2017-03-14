@@ -4,10 +4,6 @@
 configuration:  
   projectName: clemr_boot
 
-management:
-  context-path: /clemr_boot
-  port: 8761
-    
 #--------------------------------
 # server
 #--------------------------------
