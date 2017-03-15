@@ -507,7 +507,7 @@ spring:
 server:
   port: 8079
   ssl:
-    port: 8443
+    port: 443
     key-store: classpath:www.clemr.kr.p12
     key-store-password: bitcom1234
     key-password: bitcom1234
@@ -519,7 +519,7 @@ server:
     #ciphers: ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
     #protocol: TLS      
   http:
-    port: 8080
+    port: 80
   context-parameters:
     export-path: file://C:/bitmiweb_boot/workspace/excel
     import-path: file://C:/bitmiweb_boot/workspace/excel
